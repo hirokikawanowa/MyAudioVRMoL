@@ -16183,12 +16183,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571858835}
   m_Mesh: {fileID: 3255549340628110992, guid: 5a4855261ae28594f91572aecc74b169, type: 3}
---- !u!4 &575501263 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400012, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1564712457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &575980697
 GameObject:
   m_ObjectHideFlags: 0
@@ -19236,23 +19230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26238e1fbbd50474daa9e2b2419dc45e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  device: 0
-  displayLanguage: 1
-  targetMoveObject: {fileID: 716191111}
-  targetRotateObject: {fileID: 1849319443}
-  vrCameraRig: {fileID: 1849319443}
-  vrHandset: {fileID: 575501263}
-  multiply: 2
-  multiplyBack: 0.3
-  MovementStyle: 0
-  target_Rig: {fileID: 0}
-  ResetCameraKey: 32
---- !u!4 &716191111 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1564712457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &721029811
 GameObject:
   m_ObjectHideFlags: 0
@@ -41251,8 +41228,24 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: Damping
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: HmdResetsY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: Acceleration
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: EnableRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
+      propertyPath: BackAndSideDampen
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 14300000, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_Radius
@@ -50283,12 +50276,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1564712457}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1849319443 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400008, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1564712457}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1849319444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50299,27 +50286,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf162022e230bb745ab2ec48cd357f9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CameraRig: {fileID: 1849319447}
-  EnableCollision: 0
-  CollideLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  MaxFade: 1
-  FadeMinDistance: 0.25
-  PreferredHeight: 1
-  FadeMaxDistance: 0.35
---- !u!114 &1849319447 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 11400020, guid: ce816f2e6abb0504092c23ed9b970dfd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1564712457}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1849319442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9f338034892c44ebb62d97894772f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1850209153
